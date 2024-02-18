@@ -16,11 +16,31 @@
       width: 500px;
       height: 500px;
       display: inline;
+      margin: 2% 0% 0% 4%;
+
+
     }
+    #main {
+        margin: 0 0 0 0;
+      background-color: rosybrown;
+      height: 100%;
+    }
+    #body {
+      margin: 0;
+      background-color: #e0e0e0;
+    }
+    /* #content {
+        margin: 2% 0% 0% 4%;
+
+    } */
+    #form {
+        margin: 0% 2% 4% 4%;
+    }
+
   </style>
 </head>
 <div>
-<body>
+<body id="body">
 
     <figure id="main">
         <a href="index.html"> <img id="image" src="/assests/images/logo.png" alt="logo"></a>
@@ -31,7 +51,7 @@
 
     <div id="content">
         <img id="hotelImages" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radison">
-        <form action="payment.html">
+        <form id="form" action="payment.html">
             <label for="adults">Adults:</label>
             <input type="number" id="adults" name="adults" required autocomplete="off"><br>
             <label for="username">Name:</label>
@@ -43,7 +63,7 @@
             <label for="total">Total:</label>
             <input type="number" id="total" name="total" readonly autocomplete="off"><br>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Book Now">
         <h2>Radisson Blu Hotel</h2>
         <p>RATING</p>
         <p>5 Star</p>
@@ -60,7 +80,7 @@
 
 
     </div>
-    <footer id="footer">
+    <footer id="main">
         <nav>
           <a href="contact.html">Contact Us</a>
         </nav>

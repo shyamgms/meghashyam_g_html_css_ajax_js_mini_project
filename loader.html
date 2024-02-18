@@ -2,17 +2,35 @@
 <html>
 <head>
   <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3f3f3;
+    }
 
+    #loader {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 12px solid #f3f3f3;
+      border-top: 12px solid #444444;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
   </style>
 </head>
-<div>
 <body>
 
-    <div id="main">
-        <div id="loader">LOADER</div>
-    </div>
-
-</body>
+<div id="main">
+  <div id="loader"></div>
 </div>
 
+</body>
 </html>
