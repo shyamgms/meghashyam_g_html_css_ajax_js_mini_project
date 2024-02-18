@@ -4,13 +4,18 @@
   <style>
 
     #image {
-      width: 150px;
-      height: 100px;
+      width: 60px;
+      height: 60px;
     }
     #contentImage {
-      width: 300px;
-      height: 300px;
+      width: 150px;
+      height: 150px;
       display: inline;
+    }
+    #socialMedia {
+      display: inline;
+      height: 20px;
+        width: 22px;
     }
 
   </style>
@@ -18,10 +23,13 @@
 <div>
 <body>
 
-    <div id="main">
+    <figure id="main">
         <img id="image" src="/assests/images/logo.png" alt="logo">
-        <a href="login.html" target="_blank">Login</a>
-    </div>
+        <figcaption>
+            <a href="login.html" target="_blank">Login</a>
+        </figcaption>
+    </figure>
+
     <div id="content">
         <!-- have a search bar with placeholder as city-->
         <input type="text" id="search" name="search" placeholder="City" autocomplete="off">
@@ -40,14 +48,18 @@
     
 
     </div>
-    <div id="footer">
+<footer id="footer">
+    <nav>
         <a href="contact.html">Contact Us</a>
-        <div>
-        <a href="https://www.facebook.com/" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20" width="22"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20" width="22"></a>
-        <a href="https://www.twitter.com/" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20" width="22"></a>
-        <p>© 2020 ROOM SEARCH PVT. LTD.</p>
-        </div>
+    </nav>
+    <div>
+        <a href="https://www.facebook.com/" target="_blank"><img id="socialMedia" src="assests/images/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img id="socialMedia" src="assests/images/instagram.png" alt="instagram"></a>
+        <a href="https://www.twitter.com/" target="_blank"><img id="socialMedia" src="assests/images/twitter.png" alt="twitter"></a>
+        <p>&copy; 2020 ROOM SEARCH PVT. LTD.</p>
+    </div>
+</footer>
+
 
 </div>
 </body>
